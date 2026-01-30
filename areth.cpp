@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()
+int main(int argc, char *argv[])
 {
     int x = 5, y = 6, z = 7, w = 8;
 
