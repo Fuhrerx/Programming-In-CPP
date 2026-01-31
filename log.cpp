@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main()
+int main(int argc, char *argv[])
 {
     int age = 25;
     bool isStudent = true;
