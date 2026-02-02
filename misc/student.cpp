@@ -1,48 +1,48 @@
 #include <iostream>
+#include <string>
 
 class Student
 {
 public:
-    void name(std::string name)
+    void setName(std::string n)
     {
-        std::cout << "Enter the name of the student : " << std::endl;
-        std::cin >> name;
+        studentName = n;
     }
 
-    void age(int16_t age)
+    void setAge(int16_t a)
     {
-        std::cout << "Enter the age of the student : " << std::endl;
-        std::cin >> age;
+        studentAge = a;
     }
 
-    void id(int32_t id)
+    void setId(int32_t i)
     {
-        std::cout << "Enter the ID of the student : " << std::endl;
-        std::cin >> id;
+        studentId = i;
     }
 
     void disp();
+
+private:
+    std::string studentName;
+    int16_t studentAge;
+    int32_t studentId;
 };
 
 Student S[5];
 
 void Student::disp()
 {
-    for (int i = 0; i < 5; i++)
-    {
-        std::cout << "Name : " << std::endl;
-        std::cout << "Age : " << std::endl;
-        std::cout << "ID : " << std::endl;
-    }
+    std::cout << "Name: " << studentName << std::endl;
+    std::cout << "Age: " << studentAge << std::endl;
+    std::cout << "ID: " << studentId << std::endl;
 }
 
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
     for (int i = 0; i < 5; i++)
     {
-        S[i].name("Akshay");
-        S[i].age(19);
-        S[i].id(2006);
+        S[i].setName("Enter Name");
+        S[i].setAge(19);
+        S[i].setId(2006);
     }
     for (int i = 0; i < 5; i++)
     {
