@@ -32,8 +32,11 @@ Student S[5];
 void Student::disp()
 {
     std::cout << "Name: " << studentName << std::endl;
+    std::cout << std::endl;
     std::cout << "Age: " << studentAge << std::endl;
+    std::cout << std::endl;
     std::cout << "ID: " << studentId << std::endl;
+    std::cout << std::endl;
 }
 
 int main(int argc, char *argv[])
@@ -41,8 +44,11 @@ int main(int argc, char *argv[])
     for (int i = 0; i < 5; i++)
     {
         S[i].setName("Enter Name");
+        std::cout << std::endl;
         S[i].setAge(19);
+        std::cout << std::endl;
         S[i].setId(2006);
+        std::cout << std::endl;
     }
     for (int i = 0; i < 5; i++)
     {
