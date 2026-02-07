@@ -10,10 +10,10 @@ int main(int argc, char *argv[])
     int a = 10, b = 3, sum, diff, mul, div, rem;
 
     sum = a + b;
-    sum = a - b;
-    sum = a * b;
-    sum = a / b;
-    sum = a % b;
+    diff = a - b;
+    mul = a * b;
+    div = a / b;
+    rem = a % b;
 
     std::cout << "Sum : " << sum << std::endl;
     std::cout << "Difference : " << diff << std::endl;
